@@ -12,6 +12,10 @@ has_children: true
 * [https://github.com/baskerville/bspwm](https://github.com/baskerville/bspwm)
 
 
+## Install Script
+
+* [play-ubuntu-20.04-plan/prototype/bspwm](https://github.com/samwhelp/play-ubuntu-20.04-plan/tree/master/prototype/bspwm)
+
 
 ## Just the Docs
 
