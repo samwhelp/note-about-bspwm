@@ -6,7 +6,7 @@
 
 bspwmrc_profile_install () {
 
-	## $ bspwmrc-ctrl install demo https://github.com/conformal/bspwm.git
+	## $ bspwmrc-ctrl install demo https://github.com/samwhelp/note-about-bspwm.git
 
 	local name="$1"
 	local repo_url="$2"
