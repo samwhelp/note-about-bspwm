@@ -4,9 +4,9 @@
 ### Head: Url
 ##
 
-# * https://github.com/samwhelp/note-about-sxhkd/blob/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-ctrl/remote-install.sh
-# * https://github.com/samwhelp/note-about-sxhkd/blob/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-ctrl/sxhkdrc-ctrl
-# * https://raw.githubusercontent.com/samwhelp/note-about-sxhkd/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-ctrl/sxhkdrc-ctrl
+# * https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-ctrl/remote-install.sh
+# * https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-ctrl/sxhkdrc-ctrl
+# * https://raw.githubusercontent.com/samwhelp/note-about-bspwm/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-ctrl/sxhkdrc-ctrl
 
 ##
 ### Tail: Url
@@ -91,8 +91,8 @@ base_var_init () {
 
 
 	## Target
-	## https://github.com/samwhelp/note-about-sxhkd/blob/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-ctrl/sxhkdrc-ctrl
-	THE_TARGET_DOWNLOAD_URL='https://raw.githubusercontent.com/samwhelp/note-about-sxhkd/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-ctrl/sxhkdrc-ctrl'
+	## https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-ctrl/sxhkdrc-ctrl
+	THE_TARGET_DOWNLOAD_URL='https://raw.githubusercontent.com/samwhelp/note-about-bspwm/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-ctrl/sxhkdrc-ctrl'
 
 
 	THE_TARGET_FILE_NAME="sxhkdrc-ctrl"

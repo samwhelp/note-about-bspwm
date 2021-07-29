@@ -8,7 +8,7 @@ Run
 ``` sh
 mkdir -p "$HOME/.local/bin"
 
-wget 'https://raw.githubusercontent.com/samwhelp/note-about-sxhkd/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-ctrl/sxhkdrc-ctrl' -O "$HOME/.local/bin/sxhkdrc-ctrl"
+wget 'https://raw.githubusercontent.com/samwhelp/note-about-bspwm/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-ctrl/sxhkdrc-ctrl' -O "$HOME/.local/bin/sxhkdrc-ctrl"
 
 chmod 755 "$HOME/.local/bin/sxhkdrc-ctrl"
 ```
@@ -16,13 +16,13 @@ chmod 755 "$HOME/.local/bin/sxhkdrc-ctrl"
 Or Run
 
 ``` sh
-curl -fsSL 'https://raw.githubusercontent.com/samwhelp/note-about-sxhkd/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-ctrl/remote-install.sh' | bash
+curl -fsSL 'https://raw.githubusercontent.com/samwhelp/note-about-bspwm/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-ctrl/remote-install.sh' | bash
 ```
 
 Or Run
 
 ``` sh
-wget 'https://raw.githubusercontent.com/samwhelp/note-about-sxhkd/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-ctrl/remote-install.sh' -q -O - | bash
+wget 'https://raw.githubusercontent.com/samwhelp/note-about-bspwm/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-ctrl/remote-install.sh' -q -O - | bash
 ```
 
 

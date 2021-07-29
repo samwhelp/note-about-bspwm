@@ -5,7 +5,7 @@
 ##
 
 ## * https://github.com/samwhelp/skel-project-plan/blob/gh-pages/demo/sh/standalone/bin/demo-ctrl
-## * https://github.com/samwhelp/note-about-sxhkd/blob/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-get/sxhkdrc-get
+## * https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-get/sxhkdrc-get
 
 ##
 ### Tail: Url

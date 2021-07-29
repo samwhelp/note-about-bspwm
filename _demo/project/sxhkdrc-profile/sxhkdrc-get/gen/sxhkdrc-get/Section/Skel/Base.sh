@@ -63,8 +63,8 @@ base_var_init () {
 
 	THE_CMD_FILE_PATH="${THE_CMD_DIR_PATH}/$THE_CMD_FILE_NAME"
 
-	## https://github.com/samwhelp/note-about-sxhkd/blob/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-get/sxhkdrc-get
-	THE_SELF_UPDATE_URL='https://raw.githubusercontent.com/samwhelp/note-about-sxhkd/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-get/sxhkdrc-get'
+	## https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-get/sxhkdrc-get
+	THE_SELF_UPDATE_URL='https://raw.githubusercontent.com/samwhelp/note-about-bspwm/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-get/sxhkdrc-get'
 
 
 	THE_TMP_DIR_PATH="/tmp"
