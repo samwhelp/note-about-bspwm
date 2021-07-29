@@ -10,7 +10,7 @@ parent: 專案
 
 ## Link
 
-* [sxhkdrc-profile](https://github.com/samwhelp/note-about-sxhkd/tree/gh-pages/_demo/project/sxhkdrc-profile)
+* [sxhkdrc-profile](https://github.com/samwhelp/note-about-bspwm/tree/gh-pages/_demo/project/sxhkdrc-profile)
 
 
 ## Tool

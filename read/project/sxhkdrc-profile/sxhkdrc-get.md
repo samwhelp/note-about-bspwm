@@ -11,4 +11,4 @@ grand_parent: 專案
 
 ## 專案連結
 
-* [sxhkdrc-get](https://github.com/samwhelp/note-about-sxhkd/tree/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-get)
+* [sxhkdrc-get](https://github.com/samwhelp/note-about-bspwm/tree/gh-pages/_demo/project/sxhkdrc-profile/sxhkdrc-get)
