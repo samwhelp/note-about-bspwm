@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+
+#feh --bg-scale ~/Pictures/Wallpaper/bg.jpg &
+feh --bg-scale "/usr/share/backgrounds/xfce/palm-wave.jpg" &

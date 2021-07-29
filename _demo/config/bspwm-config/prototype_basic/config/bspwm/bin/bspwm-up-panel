@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+## kill old polybar
+pkill polybar
+
+
+## run new polybar
+polybar top &

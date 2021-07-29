@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+
+#pgrep -x sxhkd > /dev/null || sxhkd &
+pgrep -x sxhkd > /dev/null || sxhkd -c ~/.config/bspwm/sxhkdrc &

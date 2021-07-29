@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+
+#PATH="$HOME/.config/bspwm/bin:$PATH"
+#echo $PATH > /tmp/log.txt
+
+bspwm-up-keybind &
+
+bspwm-up-wallpaper &
+
+bspwm-up-compositor &
+
+bspwm-up-panel &
+
+bspwm-up-applet &

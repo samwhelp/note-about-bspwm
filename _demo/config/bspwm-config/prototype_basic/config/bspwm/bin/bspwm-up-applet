@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+
+fcitx &
+
+nm-applet &
+
+blueman-applet &
+
+mate-volume-control-status-icon &
