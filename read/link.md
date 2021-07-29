@@ -9,8 +9,8 @@ has_children: true
 
 ## bspwm
 
-* [https://github.com/baskerville/bspwm](https://github.com/baskerville/bspwm)
-
+* [bspwm](https://github.com/baskerville/bspwm)
+* [sxhkd](https://github.com/baskerville/sxhkd)
 
 ## Install Script
 

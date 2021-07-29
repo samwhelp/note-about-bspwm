@@ -28,6 +28,12 @@
 | [bspwmrc-ctrl](https://samwhelp.github.io/note-about-bspwm/read/project/bspwmrc-profile/bspwmrc-ctrl.html) | 用來輔助「切換」bspwm config |
 
 
+| 工具 | 簡介 |
+| --- | --- |
+| [sxhkdrc-get](https://samwhelp.github.io/note-about-sxhkd/read/project/sxhkdrc-profile/sxhkdrc-get.html) | 用來輔助「安裝」sxhkd config |
+| [sxhkdrc-ctrl](https://samwhelp.github.io/note-about-sxhkd/read/project/sxhkdrc-profile/sxhkdrc-ctrl.html) | 用來輔助「切換」sxhkd config |
+
+
 ### 輔助工具
 
 | 工具 | 指令 | 功能 |
