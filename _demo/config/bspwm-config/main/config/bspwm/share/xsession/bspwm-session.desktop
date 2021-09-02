@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=XSession
+Exec=/usr/local/bin/bspwm-session.sh
+TryExec=/usr/local/bin/bspwm-session.sh
+Name=Be Bspwm
+Comment=Bspwm Xsession
+
+Name[zh_TW]=Be Bspwm
+Comment[zh_TW]=Bspwm Xsession
