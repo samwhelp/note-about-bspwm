@@ -1,7 +1,6 @@
 default: help
 .PHONY: default
 
-
 help:
 	@echo 'Usage:'
 	@echo '	$$ make [action]'
@@ -12,18 +11,9 @@ help:
 	@echo
 	@echo '	$$ make install'
 	@echo
-	@echo '	$$ make sync'
-	@echo
-
 .PHONY: help
 
 
 install:
-	make -C ./gen/i3wm-gen-rc install
+	make -C config/bspwm install
 .PHONY: install
-
-
-
-sync:
-	make -C ./gen/i3wm-gen-rc sync
-.PHONY: sync
