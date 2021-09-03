@@ -282,6 +282,9 @@ super + ctrl + {a, s, z}
 super + q
 	bspc node -c
 
+super + shift + q
+	bspc node -k	
+
 #alt + shift + q
 #	bspc node -c
 
