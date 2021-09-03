@@ -299,12 +299,12 @@ super + q
 
 ## [k,j,h,l]
 # control bottom(k,j) and right(h,l)
-#super + ctrl + {k, j, h, l}
-#	bspc node -z {bottom 0 -20, bottom 0 20, right -20 0, right 20 0}
+super + ctrl + {k, j, h, l}
+	bspc node -z {bottom 0 -20, bottom 0 20, right -20 0, right 20 0}
 
 # control top(k,j) and left(h,l)
-#super + ctrl + {i, u, y, o}
-#	bspc node -z {top 0 -20, top 0 20, left -20 0, left 20 0}
+super + ctrl + {i, u, y, o}
+	bspc node -z {top 0 -20, top 0 20, left -20 0, left 20 0}
 
 
 ## [Up, Down, Left, Right]
