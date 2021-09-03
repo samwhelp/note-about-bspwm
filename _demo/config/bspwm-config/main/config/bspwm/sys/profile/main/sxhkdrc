@@ -44,8 +44,8 @@ alt + shift + x
 
 ## Reconfigure
 # make sxhkd reload its configuration files:
-#alt + shift + c
-#	pkill -USR1 -x sxhkd
+alt + Escape
+	pkill -USR1 -x sxhkd
 
 alt + shift + c
 	bspc wm -r
@@ -248,11 +248,15 @@ super + {k, j, h, l}
 #	bspc node -f {prev, next}.local.!hidden.window
 
 
+# focus the node for the given path jump
+super + {p, b, comma, period}
+	bspc node -f @{parent, brother, first, second}
+
 # focus the older or newer node in the focus history
-#super + bracket{left,right}
-#	bspc wm -h off; \
-#	bspc node {older,newer} -f; \
-#	bspc wm -h on
+super + bracket{left, right}
+	bspc wm -h off; \
+	bspc node {older,newer} -f; \
+	bspc wm -h on
 
 
 ##
