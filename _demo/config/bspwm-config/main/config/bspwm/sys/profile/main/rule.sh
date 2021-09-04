@@ -6,13 +6,9 @@
 
 skel_rule () {
 
-	# rules
-	bspc rule -a Gimp desktop='^8' state=floating follow=on
-	bspc rule -a Chromium desktop='^2'
-	bspc rule -a mplayer2 state=floating
-	bspc rule -a Kupfer.py focus=on
-	bspc rule -a Screenkey manage=off
-
+	##
+	## rules
+	##
 
 	#bspc rule -a Sakura desktop='^1' follow=on
 	#bspc rule -a Xfce4-terminal desktop='^1' follow=on
@@ -25,6 +21,7 @@ skel_rule () {
 	bspc rule -a firefox desktop='^3' follow=on
 	bspc rule -a Firefox desktop='^3' follow=on
 	bspc rule -a Chromium-browser desktop='^3' follow=on
+	bspc rule -a Chromium desktop='^3'
 	bspc rule -a Google-chrome='^3' follow=on
 
 	bspc rule -a pcmanfm-qt desktop='^4' follow=on
@@ -34,6 +31,7 @@ skel_rule () {
 	bspc rule -a Spacefm desktop='^4' follow=on
 
 
+	#bspc rule -a Gimp desktop='^5' state=floating follow=on
 	#bspc rule -a Gimp-2.8 desktop='^5' state=floating follow=on
 	#bspc rule -a Gimp-2.8 desktop='^5' follow=on
 	#bspc rule -a Soffice desktop='^5' follow=on
@@ -41,6 +39,10 @@ skel_rule () {
 	#bspc rule -a mpv desktop='^5' follow=on
 	#bspc rule -a vlc desktop='^5' follow=on
 	#bspc rule -a smplayer desktop='^5' follow=on
+	#bspc rule -a mplayer2 state=floating
+	#bspc rule -a Kupfer.py focus=on
+	#bspc rule -a Screenkey manage=off
+
 }
 
 
