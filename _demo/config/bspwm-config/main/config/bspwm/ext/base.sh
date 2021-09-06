@@ -35,9 +35,9 @@ find_dir_path () {
 
 ## THIS_BASE_DIR_PATH="$(find_dir_path "$0")"
 
-## $ export DEBUG_HLWM=true
+## $ export DEBUG_BSPWM=true
 is_debug () {
-	if [ "$DEBUG_HLWM" = "true" ]; then
+	if [ "$DEBUG_BSPWM" = "true" ]; then
 		return 0
 	fi
 

@@ -10,7 +10,7 @@ _bspwm_wallpaper_ctrl () {
 	_init_completion || return
 
 	if [ "$cword" = "1" ]; then
-		local action_list=$(DEBUG_HLWM=false bspwm-wallpaper-ctrl self_actions)
+		local action_list=$(DEBUG_BSPWM=false bspwm-wallpaper-ctrl self_actions)
 		COMPREPLY=( $( compgen -W "$action_list" -- "$cur" ) )
 	fi
 

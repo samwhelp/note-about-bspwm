@@ -39,7 +39,7 @@ Example:
 	$ make ubuntu-prepare
 
 Debug:
-	$ export DEBUG_HLWM=true
+	$ export DEBUG_BSPWM=true
 
 EOF
 

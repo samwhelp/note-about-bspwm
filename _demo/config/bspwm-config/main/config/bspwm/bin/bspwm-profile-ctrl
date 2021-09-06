@@ -397,7 +397,7 @@ Example:
 		$ $cmd_name rule_help
 
 Debug:
-	$ export DEBUG_HLWM=true
+	$ export DEBUG_BSPWM=true
 
 EOF
 

@@ -10,7 +10,7 @@ _bspwm_frame_ctrl () {
 	_init_completion || return
 
 	if [ "$cword" = "1" ]; then
-		local action_list=$(DEBUG_HLWM=false bspwm-frame-ctrl self_actions)
+		local action_list=$(DEBUG_BSPWM=false bspwm-frame-ctrl self_actions)
 		COMPREPLY=( $( compgen -W "$action_list" -- "$cur" ) )
 	fi
 

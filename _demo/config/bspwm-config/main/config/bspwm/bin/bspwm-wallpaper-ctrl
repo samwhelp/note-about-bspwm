@@ -145,7 +145,7 @@ Example:
 	$ $cmd_name shuf
 
 Debug:
-	$ export DEBUG_HLWM=true
+	$ export DEBUG_BSPWM=true
 
 EOF
 
