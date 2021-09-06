@@ -240,8 +240,6 @@ mod_install_share_style_profile_main () {
 
 }
 
-"$THE_STYLE_XSETTINGSD_CONFIG_FILE_PATH"
-
 
 mod_install_check () {
 	echo
