@@ -1,6 +1,6 @@
 ---
 title: 連結
-nav_order: 99
+nav_order: 9000
 has_children: true
 ---
 
@@ -15,6 +15,16 @@ has_children: true
 ## Install Script
 
 * [play-ubuntu-20.04-plan/prototype/bspwm](https://github.com/samwhelp/play-ubuntu-20.04-plan/tree/master/prototype/bspwm)
+
+
+
+## 相關筆記
+
+* [Ubuntu 20.04 探索筆記](https://samwhelp.github.io/note-ubuntu-20.04/)
+* [Ubuntu 18.04 探索筆記](https://samwhelp.github.io/note-ubuntu-18.04/)
+* [xsession簡易入門](https://samwhelp.github.io/note-about-xsession/)
+
+
 
 
 ## Just the Docs
