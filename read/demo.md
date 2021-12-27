@@ -15,3 +15,4 @@ has_children: false
 | 範例 | 設定檔 |
 | --- | --- |
 | [Launch Terminal](https://github.com/samwhelp/note-about-bspwm/tree/gh-pages/_demo/config/sxhkd-config/terminal/basic) | [sxhkdrc](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/sxhkd-config/terminal/basic/sxhkdrc) |
+| [Launch Rofi](https://github.com/samwhelp/note-about-bspwm/tree/gh-pages/_demo/config/sxhkd-config/rofi/basic) | [sxhkdrc](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/sxhkd-config/terminal/rofi/sxhkdrc) |
