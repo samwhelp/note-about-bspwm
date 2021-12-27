@@ -1,0 +1,20 @@
+
+################################################################################
+## Head: Launch App / Misc
+##
+
+alt + shift + f
+	pcmanfm-qt
+
+alt + shift + g
+	thunar
+
+alt + shift + e
+	mousepad
+
+alt + shift + b
+	firefox
+
+##
+## Tail: Launch App / Misc
+################################################################################
