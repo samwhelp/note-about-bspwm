@@ -8,7 +8,7 @@ has_children: false
 
 * [GitHub](https://github.com/samwhelp/note-about-bspwm/tree/gh-pages/_demo)
 
-## sxhkd-config
+## sxhkd 設定範例
 
 * [GitHub](https://github.com/samwhelp/note-about-bspwm/tree/gh-pages/_demo/config/sxhkd-config)
 
