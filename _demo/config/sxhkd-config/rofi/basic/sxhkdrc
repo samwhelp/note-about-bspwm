@@ -1,0 +1,17 @@
+
+################################################################################
+### Head: Launch App / Rofi
+##
+
+alt + shift + d
+	rofi -show drun -show-icons
+
+alt + shift + w
+	rofi -show window -show-icons
+
+alt + shift + r
+	rofi -show run
+
+##
+### Tail: Launch App / Rofi
+################################################################################
