@@ -1,6 +1,6 @@
 
 
-# sxhkd-config / demo / launch terminal
+# Sxhkd / Config / Demo / Launch Terminal
 
 
 ## Subject
