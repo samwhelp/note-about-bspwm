@@ -13,12 +13,12 @@
 
 * [sxhkdrc](sxhkdrc)
 
-| Key               | Note                               |
-| ----------------- | ---------------------------------- |
-| `Alt + Shift + f` | Launch File Manager (`pcmanfm-qt`) |
-| `Alt + Shift + g` | Launch File Manager (`thunar`)     |
-| `Alt + Shift + e` | Launch Text Editor  (`mousepad`)   |
-| `Alt + Shift + b` | Launch Web Browser  (`firefox`)    |
+| Keybind           | Action              | Command      |
+| ----------------- | ------------------- | ------------ |
+| `Alt + Shift + f` | Launch File Manager | `pcmanfm-qt` |
+| `Alt + Shift + g` | Launch File Manager | `thunar`     |
+| `Alt + Shift + e` | Launch Text Editor  | `mousepad`   |
+| `Alt + Shift + b` | Launch Web Browser  | `firefox`    |
 
 
 ## Howto

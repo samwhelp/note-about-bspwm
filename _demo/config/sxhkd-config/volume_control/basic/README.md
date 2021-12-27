@@ -13,7 +13,7 @@
 
 * [sxhkdrc](sxhkdrc)
 
-| Key               | Action                 | Command                                     |
+| Keybind           | Action                 | Command                                     |
 | ----------------- | ---------------------- | ------------------------------------------- |
 | `Alt + Shift + v` | Launch Volume Control  | `mate-volume-control`                       |
 | `Alt + m`         | Volume Toggle Mute     | `amixer -q -D pulse sset Master toggle`     |
@@ -23,7 +23,7 @@
 | `Alt + Ctrl + .`  | Volume Increase Slowly | `amixer -q -D pulse sset Master 1%+ unmute` |
 
 
-| Key                    | Action                 | Command                                     |
+| Keybind                | Action                 | Command                                     |
 | ---------------------- | ---------------------- | ------------------------------------------- |
 | `XF86AudioMute`        | Volume Toggle Mute     | `amixer -q -D pulse sset Master toggle`     |
 | `XF86AudioLowerVolume` | Volume Decrease        | `amixer -q -D pulse sset Master 5%- unmute` |
