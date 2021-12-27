@@ -1,0 +1,23 @@
+
+################################################################################
+### Head: Launch App / Terminal
+##
+
+alt + Return
+	sakura -m
+
+alt + shift + a
+	xfce4-terminal --maximize
+
+alt + ctrl + a
+	xfce4-terminal --drop-down
+
+alt + shift + t
+	xterm
+
+alt + ctrl + t
+	urxvt
+
+##
+### Tail: Launch App / Terminal
+################################################################################
