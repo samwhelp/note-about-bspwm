@@ -1,0 +1,16 @@
+
+################################################################################
+### Head: Wallpaper
+##
+
+## Shuf
+alt + w
+	feh --bg-fill --randomize ~/Pictures/Wallpaper
+
+## Default
+alt + ctrl + w
+	feh --bg-fill ~/Pictures/Wallpaper/default.jpg
+
+##
+### Tail: Wallpaper
+################################################################################
