@@ -41,23 +41,61 @@ cmd_var_init () {
 ### Head: Model / Wallpaper
 ##
 
-mod_wallpaper_default () {
-	echo "mod_wallpaper_default"
-	#echo "$@"
 
-	#is_command_exist 'wallpaper-select-feh' && wallpaper-select-feh default
+mod_wallpaper_default_by_by_wallpaper_select_feh () {
 
-	is_command_exist 'wallpaper-select-feh' && wallpaper-select-feh set "$HOME/Pictures/Wallpaper/default.png"
+		local wallpaper_file_path="$(sys_wallpaper_find_default_file_path)"
+
+		wallpaper-select-feh set "$wallpaper_file_path"
+
+		##wallpaper-select-feh default
 
 
 }
 
-mod_wallpaper_shuf () {
-	#echo "mod_wallpaper_shuf"
-	#echo "$@"
+mod_wallpaper_default_by_feh () {
+	local wallpaper_file_path="$(sys_wallpaper_find_default_file_path)"
 
-	cd "$HOME/Pictures/Wallpaper"
-	is_command_exist 'wallpaper-select-feh' && wallpaper-select-feh shuf
+	exec feh --bg-fill "$wallpaper_file_path" &
+}
+
+mod_wallpaper_default () {
+
+	if is_command_exist 'wallpaper-select-feh'; then
+		mod_wallpaper_default_by_by_wallpaper_select_feh
+		return 0
+	fi
+
+	if is_command_exist 'feh'; then
+		mod_wallpaper_default_by_feh
+		return 0
+	fi
+
+}
+
+mod_wallpaper_shuf_by_wallpaper_select_feh () {
+	local shuf_dir_path="$(sys_wallpaper_find_shuf_dir_path)"
+
+	wallpaper-select-feh shuf "$shuf_dir_path"
+}
+
+mod_wallpaper_shuf_by_feh () {
+	local shuf_dir_path="$(sys_wallpaper_find_shuf_dir_path)"
+
+	exec feh --bg-fill --randomize "$shuf_dir_path" &
+}
+
+mod_wallpaper_shuf () {
+
+	if is_command_exist 'wallpaper-select-feh'; then
+		mod_wallpaper_shuf_by_wallpaper_select_feh
+		return 0
+	fi
+
+	if is_command_exist 'feh'; then
+		mod_wallpaper_shuf_by_feh
+		return 0
+	fi
 
 }
 
@@ -169,10 +207,9 @@ main_run_sub_cmd () {
 
 	shift
 
-	local function_name=$(sub_cmd_find_function_name "$sub_cmd")
+	local function_name="$(sub_cmd_find_function_name "$sub_cmd")"
 
-	## if ! command -v $function_name > /dev/null; then
-	if ! type -p $function_name > /dev/null; then
+	if ! is_function_exist "$function_name" ; then
 		util_debug_echo "[Debug] sub_cmd_function_not_exist: sub_cmd=$sub_cmd; function_name=$function_name"
 
 		echo
