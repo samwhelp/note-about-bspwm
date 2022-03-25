@@ -31,9 +31,13 @@ source "$THE_BASE_DIR_PATH/init.sh"
 
 app_sxhkd_start () {
 
+	if ! is_command_exist 'sxhkd'; then
+		return 0
+	fi
+
 	util_stop_all 'sxhkd'
 
-	is_command_exist 'sxhkd' && sxhkd -c "$HOME/.config/bspwm/sxhkdrc" &
+	sxhkd -c "$HOME/.config/bspwm/sxhkdrc" &
 
 }
 

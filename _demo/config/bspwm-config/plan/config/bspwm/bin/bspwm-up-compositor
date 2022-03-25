@@ -31,14 +31,18 @@ source "$THE_BASE_DIR_PATH/init.sh"
 
 app_picom_start () {
 
+	if ! is_command_exist 'picom'; then
+		return 0
+	fi
+
 	util_stop_all 'picom'
 
 	if [ -f "$THE_STYLE_PICOM_CONFIG_FILE_PATH" ]; then
-		is_command_exist 'picom' && picom --config "$THE_STYLE_PICOM_CONFIG_FILE_PATH" &
+		picom --config "$THE_STYLE_PICOM_CONFIG_FILE_PATH" &
 		return
 	fi
 
-	is_command_exist 'picom' && picom &
+	picom &
 
 }
 

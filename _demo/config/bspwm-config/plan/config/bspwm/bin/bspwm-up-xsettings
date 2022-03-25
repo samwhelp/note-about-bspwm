@@ -31,14 +31,18 @@ source "$THE_BASE_DIR_PATH/init.sh"
 
 app_xsettingsd_start () {
 
+	if ! is_command_exist 'xsettingsd'; then
+		return 0
+	fi
+
 	util_stop_all 'xsettingsd'
 
 	if [ -f "$THE_STYLE_XSETTINGSD_CONFIG_FILE_PATH" ]; then
-		is_command_exist 'xsettingsd' && xsettingsd -c "$THE_STYLE_XSETTINGSD_CONFIG_FILE_PATH" &
+		xsettingsd -c "$THE_STYLE_XSETTINGSD_CONFIG_FILE_PATH" &
 		return
 	fi
 
-	is_command_exist 'xsettingsd' && xsettingsd &
+	xsettingsd &
 
 }
 
@@ -49,11 +53,34 @@ app_xsettingsd_start () {
 
 
 ################################################################################
+### Head: Xsettings / xfsettingsd
+##
+
+app_xfsettingsd_start () {
+
+	if ! is_command_exist 'xfsettingsd'; then
+		return 0
+	fi
+
+	util_stop_all 'xfsettingsd'
+
+	xfsettingsd &
+
+}
+
+
+##
+### Tail: Compositor / xfsettingsd
+################################################################################
+
+
+################################################################################
 ### Head: Main
 ##
 
 __main__ () {
-	app_xsettingsd_start
+	#app_xsettingsd_start
+	app_xfsettingsd_start
 }
 
 __main__

@@ -48,7 +48,7 @@ mod_install () {
 
 mod_install_bin_up () {
 
-	echo "install -Dm755 $THE_PLAN_DIR_PATH/sxhkdrc $HOME/.config/bspwm/sxhkdrc"
+	echo "install -Dm644 $THE_PLAN_DIR_PATH/sxhkdrc $HOME/.config/bspwm/sxhkdrc"
 	install -Dm644 "$THE_PLAN_DIR_PATH/sxhkdrc" "$HOME/.config/bspwm/sxhkdrc"
 
 	echo "install -Dm755 $THE_PLAN_DIR_PATH/bspwmrc $HOME/.config/bspwm/bspwmrc"
@@ -85,6 +85,13 @@ mod_install_bin_ctrl () {
 	echo "install -Dm755 $THE_BIN_DIR_PATH/bspwm-profile-ctrl $HOME/.config/bspwm/bin/bspwm-profile-ctrl"
 	install -Dm755 "$THE_BIN_DIR_PATH/bspwm-profile-ctrl" "$HOME/.config/bspwm/bin/bspwm-profile-ctrl"
 
+	echo "install -Dm755 $THE_BIN_DIR_PATH/bspwm-system-ctrl $HOME/.config/bspwm/bin/bspwm-system-ctrl"
+	install -Dm755 "$THE_BIN_DIR_PATH/bspwm-system-ctrl" "$HOME/.config/bspwm/bin/bspwm-system-ctrl"
+
+	echo "install -Dm755 $THE_BIN_DIR_PATH/bspwm-focus-ctrl $HOME/.config/bspwm/bin/bspwm-focus-ctrl"
+	install -Dm755 "$THE_BIN_DIR_PATH/bspwm-focus-ctrl" "$HOME/.config/bspwm/bin/bspwm-focus-ctrl"
+
+
 }
 
 mod_install_ext () {
@@ -98,8 +105,14 @@ mod_install_ext () {
 	echo "install -Dm644 $THE_EXT_DIR_PATH/util.sh $HOME/.config/bspwm/ext/util.sh"
 	install -Dm644 "$THE_EXT_DIR_PATH/util.sh" "$HOME/.config/bspwm/ext/util.sh"
 
+	echo "install -Dm644 $THE_EXT_DIR_PATH/wallpaper.sh $HOME/.config/bspwm/ext/wallpaper.sh"
+	install -Dm644 "$THE_EXT_DIR_PATH/wallpaper.sh" "$HOME/.config/bspwm/ext/wallpaper.sh"
+
 	echo "install -Dm644 $THE_EXT_DIR_PATH/bspwm.sh $HOME/.config/bspwm/ext/bspwm.sh"
 	install -Dm644 "$THE_EXT_DIR_PATH/bspwm.sh" "$HOME/.config/bspwm/ext/bspwm.sh"
+
+
+
 
 }
 
@@ -119,6 +132,8 @@ mod_install_sys_ext () {
 
 	echo "install -Dm644 $THE_SYS_EXT_DIR_PATH/bspwm.sh $HOME/.config/bspwm/sys/ext/bspwm.sh"
 	install -Dm644 "$THE_SYS_EXT_DIR_PATH/bspwm.sh" "$HOME/.config/bspwm/sys/ext/bspwm.sh"
+
+
 
 }
 
@@ -236,6 +251,25 @@ mod_install_share_style_profile_main () {
 
 	echo "install -Dm644 $THE_SHARE_DIR_PATH/style-profile/main/xsettingsd/xsettingsd.conf $HOME/.config/bspwm/share/style-profile/main/xsettingsd/xsettingsd.conf"
 	install -Dm644 "$THE_SHARE_DIR_PATH/style-profile/main/xsettingsd/xsettingsd.conf" "$HOME/.config/bspwm/share/style-profile/main/xsettingsd/xsettingsd.conf"
+
+
+
+
+
+	#echo "install -Dm644 $THE_SHARE_DIR_PATH/style-profile/main/tint2/tint2rc $HOME/.config/bspwm/share/style-profile/main/tint2/tint2rc"
+	#install -Dm644 "$THE_SHARE_DIR_PATH/style-profile/main/tint2/tint2rc" "$HOME/.config/bspwm/share/style-profile/main/tint2/tint2rc"
+
+	echo "install -Dm644 $THE_SHARE_DIR_PATH/style-profile/main/tint2/top_panel/tint2rc $HOME/.config/bspwm/share/style-profile/main/tint2/top_panel/tint2rc"
+	install -Dm644 "$THE_SHARE_DIR_PATH/style-profile/main/tint2/top_panel/tint2rc" "$HOME/.config/bspwm/share/style-profile/main/tint2/top_panel/tint2rc"
+
+	echo "install -Dm644 $THE_SHARE_DIR_PATH/style-profile/main/tint2/bottom_panel/tint2rc $HOME/.config/bspwm/share/style-profile/main/tint2/bottom_panel/tint2rc"
+	install -Dm644 "$THE_SHARE_DIR_PATH/style-profile/main/tint2/bottom_panel/tint2rc" "$HOME/.config/bspwm/share/style-profile/main/tint2/bottom_panel/tint2rc"
+
+	echo "install -Dm644 $THE_SHARE_DIR_PATH/style-profile/main/tint2/top_bottom_panel/tint2rc_top $HOME/.config/bspwm/share/style-profile/main/tint2/top_bottom_panel/tint2rc_top"
+	install -Dm644 "$THE_SHARE_DIR_PATH/style-profile/main/tint2/top_bottom_panel/tint2rc_top" "$HOME/.config/bspwm/share/style-profile/main/tint2/top_bottom_panel/tint2rc_top"
+
+	echo "install -Dm644 $THE_SHARE_DIR_PATH/style-profile/main/tint2/top_bottom_panel/tint2rc_bottom $HOME/.config/bspwm/share/style-profile/main/tint2/top_bottom_panel/tint2rc_bottom"
+	install -Dm644 "$THE_SHARE_DIR_PATH/style-profile/main/tint2/top_bottom_panel/tint2rc_bottom" "$HOME/.config/bspwm/share/style-profile/main/tint2/top_bottom_panel/tint2rc_bottom"
 
 
 }

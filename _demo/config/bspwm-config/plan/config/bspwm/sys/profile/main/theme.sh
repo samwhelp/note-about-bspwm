@@ -12,8 +12,8 @@ main_theme_setting () {
 
 
 	# theme
-	#bspc monitor -d Term Edit Web File Misc
-	bspc monitor -d 1 2 3 4 5
+	bspc monitor -d Term Edit Web File Misc
+	#bspc monitor -d 1 2 3 4 5
 
 	bspc config border_width          4
 	bspc config window_gap            8

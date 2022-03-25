@@ -44,10 +44,11 @@ alt + shift + x
 
 ## Reconfigure
 # make sxhkd reload its configuration files:
-alt + Escape
+alt + shift + c
 	pkill -USR1 -x sxhkd
 
-alt + shift + c
+#alt + Escape
+alt + ctrl + c
 	bspc wm -r
 
 ##
@@ -83,13 +84,13 @@ alt + shift + a
 	sakura
 
 alt + ctrl + a
-	xfce4-terminal
+	bspwm-focus-ctrl the_sakura
 
 alt + shift + t
-	xterm
+	xfce4-terminal
 
 alt + ctrl + t
-	urxvt
+	bspwm-focus-ctrl the_xfce4_terminal
 
 ##
 ## Tail: Launch App / Terminal
@@ -129,6 +130,25 @@ alt + shift + e
 
 alt + shift + b
 	firefox
+
+
+
+
+alt + ctrl + f
+	bspwm-focus-ctrl the_pcmanfm_qt
+
+alt + ctrl + g
+	bspwm-focus-ctrl the_thunar
+
+alt + ctrl + e
+	bspwm-focus-ctrl the_atom
+
+alt + ctrl + b
+	bspwm-focus-ctrl the_firefox
+
+alt + ctrl + r
+	bspwm-focus-ctrl the_mousepad
+
 
 ##
 ## Tail: Launch App / Misc
@@ -303,6 +323,10 @@ super + shift + m
 super + f
 	bspc node -t '~fullscreen'
 
+## win + `
+super + grave
+	bspc node -t '~floating'
+
 super + n
 	bspc node -t '~floating'
 
@@ -415,6 +439,8 @@ alt + grave
 alt + Tab
 	bspc desktop -l next
 
+super + Tab
+	bspc desktop -l next
 
 ## alt + ;
 alt + semicolon

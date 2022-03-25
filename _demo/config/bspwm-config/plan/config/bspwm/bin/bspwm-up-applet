@@ -31,9 +31,13 @@ source "$THE_BASE_DIR_PATH/init.sh"
 
 app_fcitx_start () {
 
+	if ! is_command_exist 'fcitx'; then
+		return 0
+	fi
+
 	util_stop_all 'fcitx'
 
-	is_command_exist 'fcitx' && fcitx &
+	fcitx &
 
 }
 
@@ -48,9 +52,13 @@ app_fcitx_start () {
 
 app_nm_applet_start () {
 
+	if ! is_command_exist 'nm-applet'; then
+		return 0
+	fi
+
 	util_stop_all 'nm-applet'
 
-	is_command_exist 'nm-applet' && nm-applet &
+	nm-applet &
 
 }
 
@@ -65,9 +73,13 @@ app_nm_applet_start () {
 
 app_blueman_applet_start () {
 
+	if ! is_command_exist 'blueman-applet'; then
+		return 0
+	fi
+
 	util_stop_all 'blueman-applet'
 
-	is_command_exist 'blueman-applet' && blueman-applet &
+	blueman-applet &
 
 }
 
@@ -82,9 +94,13 @@ app_blueman_applet_start () {
 
 app_mate_volume_control_status_icon_start () {
 
+	if ! is_command_exist 'mate-volume-control-status-icon'; then
+		return 0
+	fi
+
 	util_stop_all 'mate-volume-control-status-icon'
 
-	is_command_exist 'mate-volume-control-status-icon' && mate-volume-control-status-icon &
+	mate-volume-control-status-icon &
 
 }
 

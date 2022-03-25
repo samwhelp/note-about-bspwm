@@ -38,17 +38,17 @@ app_feh_start () {
 
 sys_feh_wallpaper_default () {
 
-	local wallpaper_file_path
+	if ! is_command_exist 'feh'; then
+		util_error_echo 'Needed: feh'
+		return 0
+	fi
 
-	#wallpaper_file_path="/usr/share/backgrounds/Manhattan_Sunset_by_Giacomo_Ferroni.jpg"
-	#wallpaper_file_path="/usr/share/backgrounds/Spices_in_Athens_by_Makis_Chourdakis.jpg"
-	wallpaper_file_path="/usr/share/backgrounds/xfce/palm-wave.jpg"
-	#wallpaper_file_path="$HOME/Pictures/Wallpaper/bg.jpg"
+	local wallpaper_file_path="$(sys_wallpaper_find_default_file_path)"
 
+	#util_stop_all 'feh'
 
-	util_stop_all 'feh'
-
-	is_command_exist 'feh' && feh --bg-scale "$wallpaper_file_path" &
+	#exec feh --bg-scale "$wallpaper_file_path" &
+	exec feh --bg-fill "$wallpaper_file_path" &
 
 }
 
