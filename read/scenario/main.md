@@ -26,7 +26,7 @@ parent: 使用情境
 
 這篇的根據，是採用「[客製的設定](https://samwhelp.github.io/note-about-bspwm/read/config/main.html)」，
 
-請參考「[我的設定檔](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/config)」。
+請參考「[我的設定檔](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/sxhkdrc)」。
 
 
 ## 系統操作
