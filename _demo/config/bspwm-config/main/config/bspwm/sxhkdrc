@@ -322,6 +322,10 @@ super + shift + m
 super + f
 	bspc node -t '~fullscreen'
 
+## win + `
+super + grave
+	bspc node -t '~floating'
+
 super + n
 	bspc node -t '~floating'
 
