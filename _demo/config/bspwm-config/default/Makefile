@@ -1,3 +1,4 @@
+
 default: help
 .PHONY: default
 
@@ -5,30 +6,31 @@ help:
 	@echo 'Usage:'
 	@echo '	$$ make [action]'
 	@echo
-	@echo 'Example:'
+	@echo 'Ex:'
 	@echo '	$$ make'
 	@echo '	$$ make help'
 	@echo
-	@echo '	$$ make manjaro-prepare'
-	@echo
-	@echo '	$$ make ubuntu-prepare'
-	@echo
 	@echo '	$$ make install'
 	@echo
+	@echo '	$$ make package-install'
+	@echo
+	@echo '	$$ make config-install'
+	@echo
+
+
 .PHONY: help
 
 
-manjaro-prepare:
-	pamac install bspwm
-.PHONY: manjaro-prepare
-
-
-ubuntu-prepare:
-	sudo apt-get install bspwm
-.PHONY: ubuntu-prepare
-
-
 install:
-	install -Dm755 ./config/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
-	install -Dm644 ./config/bspwm/sxhkdrc ~/.config/bspwm/sxhkdrc
+	@./install.sh
 .PHONY: install
+
+
+package-install:
+	@./package-install.sh
+.PHONY: package-install
+
+
+config-install:
+	@./config-install.sh
+.PHONY: config-install
