@@ -62,11 +62,11 @@ alt + ctrl + c
 
 ## Shuf
 alt + w
-	bspwm-wallpaper-ctrl shuf
+	feh --bg-fill --randomize ~/Pictures/Wallpaper
 
 ## Default
 alt + ctrl + w
-	bspwm-wallpaper-ctrl default
+	feh --bg-fill ~/Pictures/Wallpaper/default.jpg
 
 ##
 ## Tail: Wallpaper
