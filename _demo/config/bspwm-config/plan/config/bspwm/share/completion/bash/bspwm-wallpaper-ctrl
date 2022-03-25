@@ -1,0 +1,20 @@
+##
+## ## Manjaro
+## /usr/local/share/bash-completion/completions/bspwm-wallpaper-ctrl
+## $ sudo install -Dm644 ./bspwm-wallpaper-ctrl /usr/local/share/bash-completion/completions/bspwm-wallpaper-ctrl
+##
+
+_bspwm_wallpaper_ctrl () {
+
+	local cur prev words cword
+	_init_completion || return
+
+	if [ "$cword" = "1" ]; then
+		local action_list=$(DEBUG_BSPWM=false bspwm-wallpaper-ctrl self_actions)
+		COMPREPLY=( $( compgen -W "$action_list" -- "$cur" ) )
+	fi
+
+	return 0
+}
+
+complete -F _bspwm_wallpaper_ctrl bspwm-wallpaper-ctrl

@@ -1,0 +1,20 @@
+##
+## ## Manjaro
+## /usr/local/share/bash-completion/completions/bspwm-profile-ctrl
+## $ sudo install -Dm644 ./bspwm-profile-ctrl /usr/local/share/bash-completion/completions/bspwm-profile-ctrl
+##
+
+_bspwm_profile_ctrl () {
+
+	local cur prev words cword
+	_init_completion || return
+
+	if [ "$cword" = "1" ]; then
+		local action_list=$(DEBUG_BSPWM=false bspwm-profile-ctrl self_actions)
+		COMPREPLY=( $( compgen -W "$action_list" -- "$cur" ) )
+	fi
+
+	return 0
+}
+
+complete -F _bspwm_profile_ctrl bspwm-profile-ctrl
