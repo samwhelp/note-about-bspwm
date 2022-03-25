@@ -17,12 +17,144 @@
 ##
 
 THE_BASE_DIR_PATH="$(cd -- "$(dirname -- "$0")" ; pwd)"
-THE_BASE_DIR_PATH="$THE_BASE_DIR_PATH/ext"
-source "$THE_BASE_DIR_PATH/init.sh"
-source "$THE_SYS_EXT_DIR_PATH/init.sh"
 
 ##
 ### Tail: Init
+################################################################################
+
+
+################################################################################
+### Head: Skel / Init
+##
+
+skel_init () {
+
+	xsetroot -cursor_name left_ptr
+
+}
+
+##
+### Tail: Skel / Init
+################################################################################
+
+
+################################################################################
+### Head: Skel / Theme
+##
+
+skel_theme () {
+	main_theme_setting
+}
+
+main_theme_setting () {
+
+
+	# theme
+	#bspc monitor -d Term Edit Web File Misc
+	bspc monitor -d 1 2 3 4 5
+
+	bspc config border_width          4
+	bspc config window_gap            8
+
+	bspc config split_ratio           0.5
+
+	bspc config borderless_monocle    true
+	bspc config gapless_monocle       true
+	bspc config single_monocle        false
+	bspc config focus_follows_pointer false
+
+	bspc config normal_border_color   "#a3be8c"
+	bspc config active_border_color   "#b48ead"
+	bspc config focused_border_color  "#bf616a"
+	bspc config presel_feedback_color "#b48ead"
+
+
+}
+
+##
+### Tail: Skel / Theme
+################################################################################
+
+
+################################################################################
+### Head: Skel / Rule
+##
+
+skel_rule () {
+
+	##
+	## rules
+	##
+
+	#bspc rule -a Sakura desktop='^1' follow=on
+	#bspc rule -a Xfce4-terminal desktop='^1' follow=on
+	#bspc rule -a Gnome-terminal desktop='^1' follow=on
+
+	bspc rule -a Atom desktop='^2' follow=on
+	#bspc rule -a Mousepad desktop='^2' follow=on
+	#bspc rule -a Gedit desktop='^2' follow=on
+
+	bspc rule -a firefox desktop='^3' follow=on
+	bspc rule -a Firefox desktop='^3' follow=on
+	bspc rule -a Chromium-browser desktop='^3' follow=on
+	bspc rule -a Chromium desktop='^3'
+	bspc rule -a Google-chrome='^3' follow=on
+
+	bspc rule -a pcmanfm-qt desktop='^4' follow=on
+	bspc rule -a Thunar desktop='^4' follow=on
+	bspc rule -a Nautilus desktop='^4' follow=on
+	bspc rule -a Pcmanfm desktop='^4' follow=on
+	bspc rule -a Spacefm desktop='^4' follow=on
+
+
+	#bspc rule -a Gimp desktop='^5' state=floating follow=on
+	#bspc rule -a Gimp-2.8 desktop='^5' state=floating follow=on
+	#bspc rule -a Gimp-2.8 desktop='^5' follow=on
+	#bspc rule -a Soffice desktop='^5' follow=on
+	#bspc rule -a Audacious desktop='^5' follow=on
+	#bspc rule -a mpv desktop='^5' follow=on
+	#bspc rule -a vlc desktop='^5' follow=on
+	#bspc rule -a smplayer desktop='^5' follow=on
+	#bspc rule -a mplayer2 state=floating
+	#bspc rule -a Kupfer.py focus=on
+	#bspc rule -a Screenkey manage=off
+
+}
+
+
+##
+### Tail: Skel / Rule
+################################################################################
+
+
+################################################################################
+### Head: Skel / Up
+##
+
+skel_up () {
+	PATH="$HOME/.config/bspwm/bin:$PATH"
+
+	bspwm-up
+}
+
+##
+### Tail: Skel / Up
+################################################################################
+
+
+################################################################################
+### Head: Skel / Run
+##
+
+skel_run () {
+	skel_init
+	skel_theme
+	skel_rule
+	skel_up
+}
+
+##
+### Tail: Skel / Run
 ################################################################################
 
 
@@ -31,7 +163,6 @@ source "$THE_SYS_EXT_DIR_PATH/init.sh"
 ##
 
 __main__ () {
-	profile_run
 	skel_run
 }
 

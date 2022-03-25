@@ -14,11 +14,17 @@ bspwm_config_install () {
 	echo "##"
 	echo
 
-	#echo "./config/bspwm/bin/maintain-install.sh"
-	#./config/bspwm/bin/maintain-install.sh
+	echo "mkdir -p $HOME/.config/bspwm/bin"
+	mkdir -p "$HOME/.config/bspwm/bin"
 
-	echo "make -C config/bspwm install"
-	make -C config/bspwm install
+	echo "install -Dm644 ./config/bspwm/sxhkdrc $HOME/.config/bspwm/sxhkdrc"
+	install -Dm644 "./config/bspwm/sxhkdrc" "$HOME/.config/bspwm/sxhkdrc"
+
+	echo "install -Dm755 ./config/bspwm/bspwmrc $HOME/.config/bspwm/bspwmrc"
+	install -Dm755 "./config/bspwm/bspwmrc" "$HOME/.config/bspwm/bspwmrc"
+
+	echo "install -Dm755 ./config/bspwm/bin/bspwm-up $HOME/.config/bspwm/bin/bspwm-up"
+	install -Dm755 "./config/bspwm/bin/bspwm-up" "$HOME/.config/bspwm/bin/bspwm-up"
 
 	echo
 

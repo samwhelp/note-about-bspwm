@@ -1,27 +1,202 @@
 #!/usr/bin/env bash
 
 
-################################################################################
-### Head: Note
-##
-
-## * https://github.com/samwhelp/skel-project-plan/blob/gh-pages/demo/sh/project/bin/install.sh
-
-##
-### Tail: Note
-################################################################################
+#echo '## User Autostart'
 
 
 ################################################################################
-### Head: Init
+### Head: Xresources
 ##
 
-THE_BASE_DIR_PATH="$(cd -- "$(dirname -- "$0")" ; pwd)"
-THE_BASE_DIR_PATH="$THE_BASE_DIR_PATH/../ext"
-source "$THE_BASE_DIR_PATH/init.sh"
+mod_xresources () {
+
+	#xrdb merge ~/.config/bspwm/style/xresources/Xresources &
+
+	if [ -f "$HOME/.config/bspwm/style/xresources/Xresources" ]; then
+		xrdb merge "$HOME/.config/bspwm/style/xresources/Xresources" &
+	fi
+
+}
 
 ##
-### Tail: Init
+### Tail: Xresources
+################################################################################
+
+
+################################################################################
+### Head: Keybind
+##
+
+mod_keybind () {
+
+	if [ -f "$HOME/.config/bspwm/sxhkdrc" ]; then
+		#pgrep -x sxhkd > /dev/null || sxhkd -c "$HOME/.config/bspwm/sxhkdrc" &
+		killall -9 sxhkd > /dev/null || sxhkd -c "$HOME/.config/bspwm/sxhkdrc" &
+	else
+		#pgrep -x sxhkd > /dev/null || sxhkd &
+		killall -9 sxhkd > /dev/null || sxhkd &
+	fi
+
+}
+
+##
+### Tail: Keybind
+################################################################################
+
+
+################################################################################
+### Head: Cursor
+##
+
+mod_cursor () {
+
+	xsetroot -cursor_name left_ptr
+
+}
+
+##
+### Tail: Cursor
+################################################################################
+
+
+################################################################################
+### Head: Backgruond Color
+##
+
+##
+## * https://en.wikipedia.org/wiki/List_of_colors_(compact)
+##
+## > prevent no wallpaper
+##
+
+mod_background_color () {
+
+	#xsetroot -solid "#c0c0c0"
+	#xsetroot -solid "#808080"
+	#xsetroot -solid "#696969"
+	#xsetroot -solid "#625B57"
+	xsetroot -solid "#404040"
+	#xsetroot -solid "#8FBC8F"
+	#xsetroot -solid "#2F4F4F"
+	#xsetroot -solid "#F5F5DC"
+	#xsetroot -solid "#BDB76B"
+	#xsetroot -solid "#D2B48C"
+
+}
+
+##
+### Tail: Backgruond Color
+################################################################################
+
+
+################################################################################
+### Head: Wallpaper
+##
+
+mod_wallpaper () {
+
+	##
+	## feh --bg-fill ~/Pictures/Wallpaper/default.jpg
+	##
+
+	local default_wallpaper="$HOME/Pictures/Wallpaper/default.jpg"
+
+	if [ -f "$HOME/.fehbg" ]; then
+		if [ -x "$HOME/.fehbg" ]; then
+			"$HOME/.fehbg" &
+		else
+			if [ -f "$default_wallpaper" ]; then
+				feh --bg-fill "$default_wallpaper" &
+			fi
+		fi
+	else
+		if [ -f "$default_wallpaper" ]; then
+			feh --bg-fill "$default_wallpaper" &
+		fi
+	fi
+
+}
+
+##
+### Tail: Wallpaper
+################################################################################
+
+
+################################################################################
+### Head: Compositor
+##
+
+mod_compositor () {
+
+	if [ -f "$HOME/.config/bspwm/style/picom/picom.conf" ]; then
+		picom --config "$HOME/.config/bspwm/style/picom/picom.conf" &
+	else
+		picom &
+	fi
+
+}
+
+##
+### Tail: Compositor
+################################################################################
+
+
+################################################################################
+### Head: Panel
+##
+
+mod_panel () {
+
+	if [ -f "$HOME/.config/bspwm/style/tint2/tint2rc" ]; then
+		tint2 -c "$HOME/.config/bspwm/style/tint2/tint2rc" &
+	else
+		tint2 &
+	fi
+
+}
+
+##
+### Tail: Panel
+################################################################################
+
+
+################################################################################
+### Head: Autostart / XDG
+##
+
+mod_xdg_autostart () {
+
+	local xdg_autostart='/usr/lib/openbox/openbox-xdg-autostart'
+
+	if [ -f "$xdg_autostart" ]; then
+		if [ -x "$xdg_autostart" ]; then
+			"$xdg_autostart" &
+		fi
+	fi
+
+}
+
+##
+### Tail: Autostart / XDG
+################################################################################
+
+
+################################################################################
+### Head: Autostart / Extra
+##
+
+mod_extra_autostart () {
+
+	## add your autostart stuffs here
+
+	#fcitx &
+	#mate-volume-control-status-icon &
+
+	return 0
+}
+
+##
+### Tail: Autostart / Extra
 ################################################################################
 
 
@@ -30,23 +205,15 @@ source "$THE_BASE_DIR_PATH/init.sh"
 ##
 
 __main__ () {
-
-	#PATH="$HOME/.config/bspwm/bin:$PATH"
-	#echo $PATH > /tmp/log.txt
-
-	is_command_exist 'bspwm-up-keybind' && bspwm-up-keybind &
-
-	is_command_exist 'bspwm-up-xsettings' && bspwm-up-xsettings &
-
-	is_command_exist 'bspwm-up-wallpaper' && bspwm-up-wallpaper &
-
-	is_command_exist 'bspwm-up-compositor' && bspwm-up-compositor &
-
-	is_command_exist 'bspwm-up-panel' && bspwm-up-panel &
-
-	is_command_exist 'bspwm-up-applet' && bspwm-up-applet &
-
-
+	mod_xresources
+	mod_cursor
+	mod_background_color
+	mod_wallpaper
+	mod_keybind
+	mod_compositor
+	mod_panel
+	mod_xdg_autostart
+	mod_extra_autostart
 }
 
 __main__
