@@ -1,13 +1,13 @@
 
-# Bspwm / Config / Main
+# Bspwm / Config / Plan
 
 
 ## Config File Path
 
 | Path | Note |
 | --- | --- |
-| [~/.config/bspwm/bspwmrc](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/bspwmrc) | bspwmrc start |
-| [~/.config/bspwm/sxhkdrc](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/sxhkdrc) | keybind config |
+| [~/.config/bspwm/bspwmrc](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/plan/config/bspwm/bspwmrc) | bspwmrc start |
+| [~/.config/bspwm/sxhkdrc](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/plan/config/bspwm/sxhkdrc) | keybind config |
 
 
 ## Link
