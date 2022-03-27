@@ -16,10 +16,11 @@
 | Keybind           | Action          | Command                      |
 | ----------------- | --------------- | ---------------------------- |
 | `Alt + Enter`     | Launch Terminal | `sakura -m`                  |
-| `Alt + Shift + a` | Launch Terminal | `xfce4-terminal --maximize`  |
-| `Alt + Ctrl + a`  | Launch Terminal | `xfce4-terminal --drop-down` |
+| `Alt + Shift + a` | Launch Terminal | `sakura -m`                  |
+| `Alt + Ctrl + a`  | Launch Terminal | `xfce4-terminal --maximize`  |
 | `Alt + Shift + t` | Launch Terminal | `xterm`                      |
 | `Alt + Ctrl + t`  | Launch Terminal | `urxvt`                      |
+| `Alt + Shift + y` | Launch Terminal | `xfce4-terminal --drop-down` |
 
 
 ## Howto

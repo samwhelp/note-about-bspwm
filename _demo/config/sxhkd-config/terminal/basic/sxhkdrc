@@ -7,16 +7,19 @@ alt + Return
 	sakura -m
 
 alt + shift + a
-	xfce4-terminal --maximize
+	sakura -m
 
 alt + ctrl + a
-	xfce4-terminal --drop-down
+	xfce4-terminal --maximize
 
 alt + shift + t
 	xterm
 
 alt + ctrl + t
 	urxvt
+	
+alt + shift + y
+	xfce4-terminal --drop-down
 
 ##
 ### Tail: Launch App / Terminal
