@@ -56,6 +56,7 @@
 * [manjaro 探索筆記](https://samwhelp.github.io/note-about-manjaro/)
 * [archcraft 探索筆記](https://samwhelp.github.io/note-about-archcraft/) / [archcraft-adjustment-package](https://github.com/samwhelp/archcraft-adjustment-package/) / [bspwm-with-tint](https://github.com/samwhelp/archcraft-adjustment-package/tree/main/core/wm/bspwm/archcraft-modeling-bspwm-with-tint/asset/etc/skel/.local/share/bspwmrc-profile/bspwm-with-tint)
 * [xsession 簡易入門](https://samwhelp.github.io/note-about-xsession/)
+* [System Modeling](https://samwhelp.github.io/system-modeling/)
 
 
 ## samwhelp
