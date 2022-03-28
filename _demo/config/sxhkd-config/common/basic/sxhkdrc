@@ -226,4 +226,29 @@ alt + ctrl + w
 
 
 
+################################################################################
+### Head: Screenshot / Control
+##
+
+
+##
+## ## Screenshot
+## `Print`
+##
+Print
+	scrot
+
+##
+## ## Screenshot Selected Area
+## `Alt + Print`
+##
+alt + Print
+	scrot -s
+
+
+##
+### Tail: Screenshot / Control
+################################################################################
+
+
 
