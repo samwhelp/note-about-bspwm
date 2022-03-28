@@ -10,6 +10,11 @@ grand_parent: 使用情境
 # 工作空間切換
 
 
+* [我個人定義的個工作空間](#我個人定義的個工作空間)
+* [指定切換](#指定切換)
+* [循環切換](#循環切換)
+
+
 ## 我個人定義的個工作空間
 
 * [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/bspwmrc#L54)
@@ -25,7 +30,7 @@ grand_parent: 使用情境
 
 ## 指定切換
 
-* [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/sxhkdrc#L190)
+* [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/share/gen/sxhkd-gen-rc/Section/Keybind/Workspace/SwitchSpecific.conf)
 
 | 按鍵組合  | 功能                    | 執行指令                       |
 | --------- | ----------------------- | ------------------------------ |
@@ -38,11 +43,8 @@ grand_parent: 使用情境
 
 ## 循環切換
 
-* [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/sxhkdrc#L177)
+* [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/share/gen/sxhkd-gen-rc/Section/Keybind/Workspace/SwitchCycle.conf)
 
-| 按鍵組合  | 功能                                   | 執行指令                       |
-| --------- | -------------------------------------- | ------------------------------ |
-| `Alt + z` | 在目前和先前的工作空間來回切換(反覆按) | `bspc desktop -f last` |
 
 | 按鍵組合  | 功能                 | 執行指令                   |
 | --------- | -------------------- | -------------------------- |
@@ -58,3 +60,8 @@ grand_parent: 使用情境
 | ------------- | -------------------- | -------------------------- |
 | `Alt + Left`  | 切換到上一個工作空間 | `bspc desktop -f prev.local`  |
 | `Alt + Right` | 切換到下一個工作空間 | `bspc desktop -f next.local`  |
+
+
+| 按鍵組合  | 功能                                   | 執行指令                       |
+| --------- | -------------------------------------- | ------------------------------ |
+| `Alt + z` | 在目前和之前的工作空間來回切換(反覆按) | `bspc desktop -f last` |

@@ -9,10 +9,8 @@ grand_parent: 使用情境
 
 # 視窗聚焦切換
 
-* [循環切換](#循環切換)
 
-
-## 前後聚焦切換
+## 循環切換
 
 * [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/share/gen/sxhkd-gen-rc/Section/Keybind/Window/FocusCycle.conf)
 
@@ -36,4 +34,4 @@ grand_parent: 使用情境
 
 | 按鍵組合  | 功能                   | 執行指令               |
 | ----------| ---------------------- | ---------------------- |
-| `Win + z` | 聚焦切換到之前聚焦的視窗 | `bspc node -f prev.local.!hidden.window`  |
+| `Win + z` | 聚焦切換到之前聚焦的視窗 | `bspc node -f last`  |
