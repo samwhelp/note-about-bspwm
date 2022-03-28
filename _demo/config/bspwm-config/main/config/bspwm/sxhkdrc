@@ -47,7 +47,7 @@ alt + shift + x
 alt + shift + c
 	pkill -USR1 -x sxhkd
 
-#alt + Escape
+## Restart bspwm
 alt + ctrl + c
 	bspc wm -r
 
@@ -303,6 +303,9 @@ super + bracket{left, right}
 ## Head: Window / Swap
 ##
 
+super + {grave, Tab}
+	bspc node -s {prev, next}.local.!hidden.window
+
 super + shift + {a, s}
 	bspc node -s {prev, next}.local.!hidden.window
 
@@ -338,8 +341,8 @@ super + shift + m
 super + f
 	bspc node -t '~fullscreen'
 
-## win + `
-super + grave
+## Win + Esc
+super + Escape
 	bspc node -t '~floating'
 
 super + n
@@ -452,9 +455,6 @@ alt + grave
 	bspc desktop -l prev
 
 alt + Tab
-	bspc desktop -l next
-
-super + Tab
 	bspc desktop -l next
 
 ## alt + ;
