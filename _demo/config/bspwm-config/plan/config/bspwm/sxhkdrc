@@ -134,7 +134,7 @@ alt + shift + r
 
 
 ################################################################################
-## Head: Launch App / Misc
+## Head: Launch App / Favorite
 ##
 
 alt + shift + f
@@ -150,7 +150,7 @@ alt + shift + b
 	firefox
 
 ##
-## Tail: Launch App / Misc
+## Tail: Launch App / Favorite
 ################################################################################
 
 
@@ -172,6 +172,10 @@ alt + shift + i
 ## Head: Workspace
 ##
 
+# focus the last desktop
+alt + z
+	bspc desktop -f last
+
 # focus the next/previous desktop in the current monitor
 alt + {a, s}
 	bspc desktop -f {prev, next}.local
@@ -179,12 +183,13 @@ alt + {a, s}
 alt + {h, l}
 	bspc desktop -f {prev, next}.local
 
-alt + bracket{left, right}
+alt + {Left, Right}
 	bspc desktop -f {prev, next}.local
 
-# focus the last desktop
-alt + z
-	bspc desktop -f last
+#alt + bracket{left, right}
+#	bspc desktop -f {prev, next}.local
+
+
 
 # to desktop
 alt + {1-9, 0}
@@ -259,9 +264,15 @@ super + z
 super + {a, s}
 	bspc node -f {prev, next}.local.!hidden.window
 
+super + {h, l}
+	bspc node -f {prev, next}.local.!hidden.window
+
+super + {Left, Right}
+	bspc node -f {prev, next}.local.!hidden.window
+
 # focus the node in the given direction
-super + {k, j, h, l}
-	bspc node -f {north, south, west, east}
+#super + {k, j, h, l}
+#	bspc node -f {north, south, west, east}
 
 #super + bracket{left, right}
 #	bspc node -f {prev, next}.local.!hidden.window
@@ -290,11 +301,17 @@ super + bracket{left, right}
 super + {grave, Tab}
 	bspc node -s {prev, next}.local.!hidden.window
 
-super + shift + {a, s}
+super + {k, j}
 	bspc node -s {prev, next}.local.!hidden.window
 
-super + shift + {k, j, h, l}
-	bspc node -s {north, south, west, east}
+super + {Up, Down}
+	bspc node -s {prev, next}.local.!hidden.window
+
+#super + shift + {a, s}
+#	bspc node -s {prev, next}.local.!hidden.window
+
+#super + shift + {k, j, h, l}
+#	bspc node -s {north, south, west, east}
 
 # swap the current node and the biggest node
 #super + shift + b
@@ -385,15 +402,19 @@ super + ctrl + {k, j, h, l}
 super + ctrl + {i, u, y, o}
 	bspc node -z {top 0 -20, top 0 20, left -20 0, left 20 0}
 
-
 ## [Up, Down, Left, Right]
 # control bottom(Up,Down) and right(Left,Right)
 super + ctrl + {Up, Down, Left, Right}
 	bspc node -z {bottom 0 -20, bottom 0 20, right -20 0, right 20 0}
 
+## [Up, Down, Left, Right]
+# control bottom(Up,Down) and right(Left,Right)
+#super + ctrl + {Up, Down, Left, Right}
+#	bspc node -z {bottom 0 -20, bottom 0 20, right -20 0, right 20 0}
+
 # control top(Up,Down) and left(Left,Right)
-super + shift + {Up, Down, Left, Right}
-	bspc node -z {top 0 -20, top 0 20, left -20 0, left 20 0}
+#super + shift + {Up, Down, Left, Right}
+#	bspc node -z {top 0 -20, top 0 20, left -20 0, left 20 0}
 
 
 ##
@@ -407,14 +428,19 @@ super + shift + {Up, Down, Left, Right}
 
 ## [k, j, h, l]
 # move a floating window
-#super + shift + {h, j, k, l}
-#	bspc node -v {-20 0, 0 20, 0 -20, 20 0}
+super + shift + {h, j, k, l}
+	bspc node -v {-20 0, 0 20, 0 -20, 20 0}
+
+## [Up, Down, Left, Right]
+# move a floating window
+super + shift + {Left, Down, Up, Right}
+	bspc node -v {-20 0, 0 20, 0 -20, 20 0}
 
 
 ## [Up, Down, Left, Right]
 # move a floating window
-super + {Left, Down, Up, Right}
-	bspc node -v {-20 0, 0 20, 0 -20, 20 0}
+#super + {Left, Down, Up, Right}
+#	bspc node -v {-20 0, 0 20, 0 -20, 20 0}
 
 ##
 ## Tail: Window / Move
@@ -454,6 +480,12 @@ alt + k
 	bspc desktop -l prev
 
 alt + j
+	bspc desktop -l next
+
+alt + Up
+	bspc desktop -l prev
+
+alt + Down
 	bspc desktop -l next
 
 
