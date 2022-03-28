@@ -32,8 +32,16 @@ grand_parent: 使用情境
 | --------- | ---------- | ----------------------------- |
 | `Win + f` | 視窗全螢幕 | `bspc node -t '~fullscreen'`  |
 
+## 視窗最大化
 
-### 單一視窗浮動或平鋪
+| 按鍵組合      | 功能                               | 執行指令                                  |
+| ------------- | ---------------------------------- | ----------------------------------------- |
+| `Win + w`     | 切換到下一個畫面布局狀態   | `bspc desktop -l next`     |
+
+> `bspc desktop -l next` 雖然是「切換到下一個畫面布局狀態」，但其實只有兩個狀態，其中一個會有最大化的效果。我個人慣用把「視窗最大化」這個功能，綁定「`Win + w`」
+
+
+## 單一視窗浮動或平鋪
 
 * [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/share/gen/sxhkd-gen-rc/Section/Keybind/Window/ToggleState.conf#L15)
 
@@ -44,7 +52,7 @@ grand_parent: 使用情境
 | `Win + t`     | 單一視窗，切換成「浮動狀態」或是「平鋪狀態」 | `bspc node -t '~tiled'`  |
 
 
-### 單一視窗虛擬平鋪
+## 單一視窗虛擬平鋪
 
 * [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/share/gen/sxhkd-gen-rc/Section/Keybind/Window/ToggleState.conf#L22)
 
