@@ -127,6 +127,37 @@ super + {1-9, 0}
 
 
 ################################################################################
+### Head: Layout / Preselect
+##
+
+
+#
+# preselect
+#
+
+# preselect the direction
+super + alt + {k, j, h, l}
+	bspc node -p {north, south, west, east}
+
+# preselect the ratio
+super + alt + {1-9}
+	bspc node -o 0.{1-9}
+
+# cancel the preselection for the focused node
+super + alt + m
+	bspc node -p cancel
+
+# cancel the preselection for the focused desktop
+super + alt + n
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+
+##
+### Tail: Layout / Preselect
+################################################################################
+
+
+################################################################################
 ### Head: Layout / Switch Cycle
 ##
 
@@ -174,37 +205,6 @@ super + w
 
 ##
 ### Tail: Layout / Switch Cycle
-################################################################################
-
-
-################################################################################
-### Head: Layout / Preselect
-##
-
-
-#
-# preselect
-#
-
-# preselect the direction
-super + alt + {k, j, h, l}
-	bspc node -p {north, south, west, east}
-
-# preselect the ratio
-super + alt + {1-9}
-	bspc node -o 0.{1-9}
-
-# cancel the preselection for the focused node
-super + alt + m
-	bspc node -p cancel
-
-# cancel the preselection for the focused desktop
-super + alt + n
-	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
-
-
-##
-### Tail: Layout / Preselect
 ################################################################################
 
 
