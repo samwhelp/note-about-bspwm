@@ -16,7 +16,7 @@ grand_parent: 使用情境
 
 ## 關閉視窗
 
-* [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/sxhkdrc#L352)
+* [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/share/gen/sxhkd-gen-rc/Section/Keybind/Window/Close.conf)
 
 | 按鍵組合          | 功能     | 執行指令         |
 | ----------------- | -------- | ---------------- |
@@ -26,7 +26,7 @@ grand_parent: 使用情境
 
 ## 視窗全螢幕
 
-* [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/sxhkdrc#L322)
+* [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/share/gen/sxhkd-gen-rc/Section/Keybind/Window/ToggleState.conf#L12)
 
 | 按鍵組合  | 功能       | 執行指令                      |
 | --------- | ---------- | ----------------------------- |
@@ -35,11 +35,19 @@ grand_parent: 使用情境
 
 ### 單一視窗浮動或平鋪
 
-* [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/sxhkdrc)
+* [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/share/gen/sxhkd-gen-rc/Section/Keybind/Window/ToggleState.conf#L15)
 
 | 按鍵組合      | 功能                                         | 執行指令                    |
 | ------------- | -------------------------------------------- | --------------------------- |
-| `Win + grave` | 單一視窗，切換成「浮動狀態」或是「平鋪狀態」 | `bspc node -t '~floating'`  |
+| `Win + Esc` | 單一視窗，切換成「浮動狀態」或是「平鋪狀態」 | `bspc node -t '~floating'`  |
 | `Win + n`     | 單一視窗，切換成「浮動狀態」或是「平鋪狀態」 | `bspc node -t '~floating'`  |
+| `Win + t`     | 單一視窗，切換成「浮動狀態」或是「平鋪狀態」 | `bspc node -t '~tiled'`  |
 
-> 關於「grave」 指的是 「`」這個「按鍵」。
+
+### 單一視窗虛擬平鋪
+
+* [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/share/gen/sxhkd-gen-rc/Section/Keybind/Window/ToggleState.conf#L22)
+
+| 按鍵組合      | 功能                                         | 執行指令                    |
+| ------------- | -------------------------------------------- | --------------------------- |
+| `Win + v`     | 單一視窗，切換成「虛擬平鋪」 | `bspc node -t '~pseudo_tiled'`  |
