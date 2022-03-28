@@ -52,7 +52,6 @@ test:
 
 sync: rc
 	install -Dm644 sxhkdrc ../../../sxhkdrc
-	install -Dm644 sxhkdrc ../../../sys/profile/main/sxhkdrc
 .PHONY: sync
 
 
