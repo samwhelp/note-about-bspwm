@@ -53,7 +53,7 @@ parent: 使用情境
 | [視窗移動操作](main/window-move) |
 | [視窗更改大小](main/window-resize) |
 | [視窗聚焦切換](main/window-focus) |
-| [Preselect](main/preselect) |
+
 
 
 ## 畫面佈局
@@ -61,6 +61,7 @@ parent: 使用情境
 | 主題 |
 | --- |
 | [畫面佈局切換](main/layout-toggle) |
+| [預先選取畫面佈局視窗區塊](main/layout-preselect) |
 
 
 ## 工作空間
