@@ -25,7 +25,9 @@
 
 | 設定範例 | 備註 |
 | --- | --- |
-| [main](https://github.com/samwhelp/note-about-bspwm/tree/gh-pages/_demo/config/bspwm-config/main) | 我的設定架構 |
+| [main](https://github.com/samwhelp/note-about-bspwm/tree/gh-pages/_demo/config/bspwm-config/main) | 簡易的設定架構 |
+| [plan](https://github.com/samwhelp/note-about-bspwm/tree/gh-pages/_demo/config/bspwm-config/plan) | 進階的設定架構 |
+
 
 ## 專案
 
