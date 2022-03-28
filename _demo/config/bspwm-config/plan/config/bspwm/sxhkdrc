@@ -89,7 +89,7 @@ alt + Print
 
 
 ################################################################################
-## Head: Launch App / Terminal
+### Head: Launch App / Terminal
 ##
 
 alt + Return
@@ -99,16 +99,19 @@ alt + shift + a
 	sakura
 
 alt + ctrl + a
-	bspwm-focus-ctrl the_sakura
-
-alt + shift + t
 	xfce4-terminal
 
+alt + shift + t
+	xterm
+
 alt + ctrl + t
-	bspwm-focus-ctrl the_xfce4_terminal
+	urxvt
+
+#alt + shift + y
+#	xfce4-terminal --drop-down
 
 ##
-## Tail: Launch App / Terminal
+### Tail: Launch App / Terminal
 ################################################################################
 
 
@@ -145,25 +148,6 @@ alt + shift + e
 
 alt + shift + b
 	firefox
-
-
-
-
-alt + ctrl + f
-	bspwm-focus-ctrl the_pcmanfm_qt
-
-alt + ctrl + g
-	bspwm-focus-ctrl the_thunar
-
-alt + ctrl + e
-	bspwm-focus-ctrl the_atom
-
-alt + ctrl + b
-	bspwm-focus-ctrl the_firefox
-
-alt + ctrl + r
-	bspwm-focus-ctrl the_mousepad
-
 
 ##
 ## Tail: Launch App / Misc
