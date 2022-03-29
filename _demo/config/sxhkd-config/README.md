@@ -11,3 +11,8 @@
 | [Volume Control](volume/basic) | [sxhkdrc](volume/basic/sxhkdrc) |
 | [Screenshot](screenshot/basic)         | [sxhkdrc](screenshot/basic/sxhkdrc)     |
 | [Wallpaper](wallpaper/basic)           | [sxhkdrc](wallpaper/basic/sxhkdrc)      |
+
+
+| Demo                                   | Config                                  |
+| -------------------------------------- | --------------------------------------- |
+| [Common](common/basic)                 | [sxhkdrc](common/basic/sxhkdrc)         |
