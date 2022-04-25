@@ -44,7 +44,7 @@ default_theme () {
 	# theme
 	#bspc monitor -d I II III IV V VI VII VIII IX X
 	#bspc monitor -d 1 2 3 4 5 6 7 8 9 10
-	bspc monitor -d Term Edit Web File Misc
+	bspc monitor -d File Edit Web Term Misc
 	#bspc monitor -d 1 2 3 4 5
 
 	bspc config border_width         2

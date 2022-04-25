@@ -10,13 +10,17 @@ skel_rule () {
 	## rules
 	##
 
-	#bspc rule -a Sakura desktop='^1' follow=on
-	#bspc rule -a Xfce4-terminal desktop='^1' follow=on
-	#bspc rule -a Gnome-terminal desktop='^1' follow=on
+	bspc rule -a pcmanfm-qt desktop='^1' follow=on
+	bspc rule -a Thunar desktop='^1' follow=on
+	bspc rule -a Nautilus desktop='^1' follow=on
+	bspc rule -a Pcmanfm desktop='^1' follow=on
+	bspc rule -a Spacefm desktop='^1' follow=on
+
 
 	bspc rule -a Atom desktop='^2' follow=on
 	#bspc rule -a Mousepad desktop='^2' follow=on
 	#bspc rule -a Gedit desktop='^2' follow=on
+
 
 	bspc rule -a firefox desktop='^3' follow=on
 	bspc rule -a Firefox desktop='^3' follow=on
@@ -24,11 +28,10 @@ skel_rule () {
 	bspc rule -a Chromium desktop='^3'
 	bspc rule -a Google-chrome='^3' follow=on
 
-	bspc rule -a pcmanfm-qt desktop='^4' follow=on
-	bspc rule -a Thunar desktop='^4' follow=on
-	bspc rule -a Nautilus desktop='^4' follow=on
-	bspc rule -a Pcmanfm desktop='^4' follow=on
-	bspc rule -a Spacefm desktop='^4' follow=on
+
+	#bspc rule -a Sakura desktop='^4' follow=on
+	#bspc rule -a Xfce4-terminal desktop='^4' follow=on
+	#bspc rule -a Gnome-terminal desktop='^4' follow=on
 
 
 	#bspc rule -a Gimp desktop='^5' state=floating follow=on
