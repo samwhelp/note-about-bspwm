@@ -232,10 +232,21 @@ super + w
 ## key: minus, plus, equal
 
 ## Default Gaps
-super + 0
+#super + 0
+#	bspc config window_gap 8
+
+
+## Default Gaps
+super + shift + 0
 	bspc config window_gap 8
 
-super + {minus, equal}
+
+## Gaps Control
+#super + {equal, minus}
+#	bspc config window_gap $(( $(bspc config window_gap) {-,+} 5 ))
+
+
+super + shift + {equal, minus}
 	bspc config window_gap $(( $(bspc config window_gap) {-,+} 5 ))
 
 
@@ -243,8 +254,14 @@ super + {minus, equal}
 ## Mousebind
 ##
 
+
+# Default window gaps by `Super + Shift + <Mouse Middle Click>
+super + shift + button2
+	bspc config window_gap 8
+
+
 # Focused desktop window gaps by `Super + <Mouse Middle Scroll>
-super + button{4,5}
+super + shift + button{4,5}
 	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
 
 # Global window gaps by `Super + Alt + <Mouse Middle Scroll>
@@ -253,10 +270,6 @@ super + alt + button{4,5}
 
 
 
-
-# Default window gaps by `Super <Mouse Middle Click>
-super + button2
-	bspc config window_gap 8
 
 ##
 ### Tail: Layout / Gaps
@@ -478,11 +491,11 @@ super + ctrl + {Up, Down, Left, Right}
 ##
 
 ## Change transparency on focused window by keybind
-super + ctrl + {0, minus, equal}
+super + ctrl + {0, equal, minus}
 	{picom-trans -c -d, picom-trans -c -o -10, picom-trans -c -o +10}
 
 ## Change transparency on focused window by mousebind
-super + ctrl + button{2,5,4}
+super + ctrl + button{2,4,5}
 	{picom-trans -c -d, picom-trans -c -o -10, picom-trans -c -o +10}
 
 ##
