@@ -42,4 +42,4 @@ grand_parent: 使用情境
 
 ## 用法對照
 
-* [畫面佈局間距](https://samwhelp.github.io/note-about-bspwm/read/scenario/main/layout-gaps.html)
+* [畫面佈局視窗區塊間距](https://samwhelp.github.io/note-about-bspwm/read/scenario/main/layout-gaps.html)

@@ -1,5 +1,5 @@
 ---
-title: 畫面佈局間距
+title: 畫面佈局視窗區塊間距
 nav_order: 5032
 has_children: false
 parent: 使用情境(客製)
@@ -7,7 +7,7 @@ grand_parent: 使用情境
 ---
 
 
-# 畫面佈局間距
+# 畫面佈局視窗區塊間距
 
 
 ## 按鍵操作
