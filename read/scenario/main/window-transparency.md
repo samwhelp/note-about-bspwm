@@ -36,3 +36,10 @@ grand_parent: 使用情境
 | 按鍵組合      | 功能                               | 執行指令                                  |
 | ------------- | ---------------------------------- | ----------------------------------------- |
 | `Win + Ctrl + <滑鼠中鍵按下>`     | 回復到預設透明度    | `picom-trans -c -d`     |
+
+
+
+
+## 用法對照
+
+* [畫面佈局間距](https://samwhelp.github.io/note-about-bspwm/read/scenario/main/layout-gaps.html)

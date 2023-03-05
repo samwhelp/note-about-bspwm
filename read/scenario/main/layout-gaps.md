@@ -36,3 +36,10 @@ grand_parent: 使用情境
 | 按鍵組合      | 功能                               | 執行指令                                  |
 | ------------- | ---------------------------------- | ----------------------------------------- |
 | `Win + Shift + <滑鼠中鍵按下>`     | 回復到初始間距    | `bspc config window_gap 8`     |
+
+
+
+
+## 用法對照
+
+* [視窗透明度](https://samwhelp.github.io/note-about-bspwm/read/scenario/main/window-transparency.html)

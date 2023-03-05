@@ -26,3 +26,10 @@ grand_parent: 使用情境
 | `XF86AudioMute`        | 音量切換成靜音 | `amixer -q -D pulse sset Master toggle`     |
 | `XF86AudioLowerVolume` | 減小音量       | `amixer -q -D pulse sset Master 5%- unmute` |
 | `XF86AudioRaiseVolume` | 增加音量       | `amixer -q -D pulse sset Master 5%+ unmute` |
+
+
+
+
+## 用法對照
+
+* [螢幕亮度控制](https://samwhelp.github.io/note-about-bspwm/read/scenario/main/monitor-brightness-control.html)
