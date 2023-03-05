@@ -53,7 +53,7 @@ parent: 使用情境
 | [視窗移動操作](main/window-move) |
 | [視窗更改大小](main/window-resize) |
 | [視窗聚焦切換](main/window-focus) |
-
+| [視窗透明度](main/window-transparency) |
 
 
 ## 畫面佈局
