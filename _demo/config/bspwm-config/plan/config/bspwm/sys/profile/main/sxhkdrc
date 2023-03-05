@@ -642,9 +642,16 @@ alt + shift + e
 
 ##
 ## ## Launch File Browser
+##
 ## `Alt + Shift + b`
 ##
 alt + shift + b
+	firefox --new-tab about:blank
+
+##
+## `Alt + Ctrl + b`
+##
+alt + ctrl + b
 	firefox
 
 ##
