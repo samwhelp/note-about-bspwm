@@ -17,8 +17,8 @@ grand_parent: 使用情境
 
 | 按鍵組合      | 功能                               | 執行指令                                  |
 | ------------- | ---------------------------------- | ----------------------------------------- |
-| `All + grave` | 切換到上一個畫面布局狀態 | `bspc desktop -l prev`  |
-| `All + Tab`   | 切換到下一個畫面布局狀態   | `bspc desktop -l next`            |
+| `Alt + grave` | 切換到上一個畫面布局狀態 | `bspc desktop -l prev`  |
+| `Alt + Tab`   | 切換到下一個畫面布局狀態   | `bspc desktop -l next`            |
 
 
 | 按鍵組合      | 功能                               | 執行指令                                  |
