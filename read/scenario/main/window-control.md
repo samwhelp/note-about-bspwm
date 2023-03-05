@@ -52,6 +52,9 @@ grand_parent: 使用情境
 | `Win + t`     | 單一視窗，切換成「浮動狀態」或是「平鋪狀態」 | `bspc node -t '~tiled'`  |
 
 
+> 在某個視窗，可以透過「`Win + <Mouse Middle Click>`」也能切換「浮動或平鋪」。
+
+
 ## 單一視窗虛擬平鋪
 
 * [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/share/gen/sxhkd-gen-rc/Section/Keybind/Window/ToggleState.conf#L22)
