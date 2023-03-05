@@ -398,6 +398,16 @@ super + v
 super + ctrl + m
 	bspc node -g marked
 
+
+## Mousebind to Toggle Floating
+## `Super + <Mouse Middle Click>`
+super + button2
+	bspc node -t '~floating'
+
+## `Alt + <Mouse Middle Click>`
+alt + button2
+	bspc node -t '~floating'
+
 ##
 ### Tail: Window / Toggle State
 ################################################################################
