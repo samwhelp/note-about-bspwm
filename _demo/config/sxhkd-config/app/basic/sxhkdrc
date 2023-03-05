@@ -15,6 +15,9 @@ alt + shift + e
 alt + shift + b
 	firefox --new-tab about:blank
 
+alt + ctrl + b
+	firefox
+
 ##
 ### Tail: Application / Launch Favorite
 ################################################################################
