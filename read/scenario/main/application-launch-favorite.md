@@ -16,4 +16,5 @@ grand_parent: 使用情境
 | `Alt + Shift + f` | 開啟檔案管理器 | `pcmanfm-qt` |
 | `Alt + Shift + g` | 開啟檔案管理器 | `thunar`     |
 | `Alt + Shift + e` | 開啟文字編輯器 | `mousepad`   |
-| `Alt + Shift + b` | 開啟網頁瀏覽器 | `firefox`    |
+| `Alt + Shift + b` | 開啟網頁瀏覽器 | `firefox --new-tab about:blank`    |
+| `Alt + Ctrl + b` | 開啟網頁瀏覽器 | `firefox`    |
