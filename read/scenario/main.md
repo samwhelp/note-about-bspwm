@@ -62,7 +62,7 @@ parent: 使用情境
 | --- |
 | [預先選取畫面佈局視窗區塊](main/layout-preselect) |
 | [畫面佈局切換](main/layout-toggle) |
-
+| [畫面佈局間距](main/layout-gabs) |
 
 ## 工作空間
 
