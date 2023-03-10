@@ -135,7 +135,7 @@ skel_rule () {
 ##
 
 skel_up () {
-	PATH="$HOME/.config/bspwm/bin:$PATH"
+	PATH="$HOME/.config/bspwm/helper/bin:$PATH"
 
 	bspwm-up
 }

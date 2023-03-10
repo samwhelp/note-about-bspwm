@@ -14,8 +14,8 @@ bspwm_config_install () {
 	echo "##"
 	echo
 
-	echo "mkdir -p $HOME/.config/bspwm/bin"
-	mkdir -p "$HOME/.config/bspwm/bin"
+	echo "mkdir -p $HOME/.config/bspwm/helper/bin"
+	mkdir -p "$HOME/.config/bspwm/helper/bin"
 
 	echo "install -Dm644 ./config/bspwm/sxhkdrc $HOME/.config/bspwm/sxhkdrc"
 	install -Dm644 "./config/bspwm/sxhkdrc" "$HOME/.config/bspwm/sxhkdrc"
@@ -23,8 +23,8 @@ bspwm_config_install () {
 	echo "install -Dm755 ./config/bspwm/bspwmrc $HOME/.config/bspwm/bspwmrc"
 	install -Dm755 "./config/bspwm/bspwmrc" "$HOME/.config/bspwm/bspwmrc"
 
-	echo "install -Dm755 ./config/bspwm/bin/bspwm-up $HOME/.config/bspwm/bin/bspwm-up"
-	install -Dm755 "./config/bspwm/bin/bspwm-up" "$HOME/.config/bspwm/bin/bspwm-up"
+	echo "install -Dm755 ./config/bspwm/helper/bin/bspwm-up $HOME/.config/bspwm/helper/bin/bspwm-up"
+	install -Dm755 "./config/bspwm/helper/bin/bspwm-up" "$HOME/.config/bspwm/helper/bin/bspwm-up"
 
 	echo
 
