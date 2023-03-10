@@ -21,4 +21,4 @@
 | Subject |
 | --- |
 | [keybind](spec-keybind.md) |
-| [keybind](spec-mousebind.md) |
+| [mousebind](spec-mousebind.md) |
