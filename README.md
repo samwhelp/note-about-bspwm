@@ -18,8 +18,8 @@
 
 | 客製 |
 | --- |
-| [設定檔](https://samwhelp.github.io/note-about-bspwm/read/config/main.html) |
-| [按鍵綁定](https://samwhelp.github.io/note-about-bspwm/read/scenario/main.html) |
+| [設定檔](https://github.com/samwhelp/note-about-bspwm/tree/gh-pages/_demo/config/bspwm-config/main/config/bspwm) |
+| [按鍵綁定](https://samwhelp.github.io/note-about-bspwm/read/config/keybind.html) |
 
 
 ### 設定範例
