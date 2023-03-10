@@ -11,7 +11,7 @@ grand_parent: 設定
 
 ## Preselect
 
-* [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/share/gen/sxhkd-gen-rc/Section/Keybind/Layout/Preselect.conf)
+* [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/helper/share/gen/sxhkd-gen-rc/Section/Keybind/Layout/Preselect.conf)
 
 
 | 按鍵組合           | 功能         | 執行指令         |

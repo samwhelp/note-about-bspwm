@@ -12,7 +12,7 @@ grand_parent: 設定
 
 ## 螢幕亮度控制
 
-* [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/share/gen/sxhkd-gen-rc/Section/Keybind/Brightness/Control.conf#L18-L24)
+* [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/helper/share/gen/sxhkd-gen-rc/Section/Keybind/Brightness/Control.conf#L18-L24)
 
 
 | 按鍵組合          | 功能             | 執行指令                                    |
@@ -21,7 +21,7 @@ grand_parent: 設定
 | `XF86MonBrightnessUp` | 增加螢幕亮度         | `brightnessctl set +5%` |
 
 
-* [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/share/gen/sxhkd-gen-rc/Section/Keybind/Brightness/Control.conf#L22-L40)
+* [設定片段](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/helper/share/gen/sxhkd-gen-rc/Section/Keybind/Brightness/Control.conf#L22-L40)
 
 
 | 按鍵組合          | 功能             | 執行指令                                    |
