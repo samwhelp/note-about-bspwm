@@ -22,11 +22,14 @@ parent: 設定
 * [音量控制](#音量控制)
 * [螢幕亮度控制](#螢幕亮度控制)
 
+
 ## 設定檔
 
 這篇的根據，是採用「[客製的設定](https://samwhelp.github.io/note-about-bspwm/read/config/profile/main.html)」，
 
 請參考「我的設定檔 / [~/.config/bspwm/sxhkdrc](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/sxhkdrc)」。
+
+> [按鍵操作快速上手指南](https://samwhelp.github.io/system-modeling/read/zh_tw/quick-start)
 
 
 ## 系統操作

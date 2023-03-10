@@ -21,6 +21,8 @@
 | [設定檔](https://github.com/samwhelp/note-about-bspwm/tree/gh-pages/_demo/config/bspwm-config/main/config/bspwm) |
 | [按鍵綁定](https://samwhelp.github.io/note-about-bspwm/read/config/keybind.html) |
 
+> [按鍵操作快速上手指南](https://samwhelp.github.io/system-modeling/read/zh_tw/quick-start)
+
 
 ### 設定範例
 
