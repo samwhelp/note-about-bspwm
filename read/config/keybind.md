@@ -29,7 +29,7 @@ parent: 設定
 
 請參考「我的設定檔 / [~/.config/bspwm/sxhkdrc](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/sxhkdrc)」。
 
-> [按鍵操作快速上手指南](https://samwhelp.github.io/system-modeling/read/zh_tw/quick-start)
+> [桌面環境按鍵操作快速上手指南](https://samwhelp.github.io/system-modeling/read/zh_tw/quick-start)
 
 
 ## 系統操作
