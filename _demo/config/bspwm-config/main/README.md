@@ -20,5 +20,5 @@
 
 | Subject |
 | --- |
-| [keybind](config/bspwm/share/doc/spec-keybind.md) |
-| [xsession](config/bspwm/share/doc/spec-xsession.md) |
+| [keybind](spec-keybind.md) |
+| [keybind](spec-mousebind.md) |
