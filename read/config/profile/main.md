@@ -19,7 +19,7 @@ grand_parent: 設定
 
 * [~/.config/bspwm/sxhkdrc](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/sxhkdrc)
 * [~/.config/bspwm/bspwmrc](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/bspwmrc)
-* [~/.config/bspwm/bin/bspwm-up](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/bin/bspwm-up)
+* [~/.config/bspwm/helper/bin/bspwm-up](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/helper/bin/bspwm-up)
 
 
 ## 按鍵綁定
