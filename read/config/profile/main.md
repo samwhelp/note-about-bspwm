@@ -27,4 +27,4 @@ grand_parent: 設定
 | 說明 |
 | --- |
 | [英文版](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/spec-keybind.md) |
-| [中文版](https://samwhelp.github.io/note-about-bspwm/read/scenario/main.html) |
+| [中文版](https://samwhelp.github.io/note-about-bspwm/read/config/keybind.html) |
