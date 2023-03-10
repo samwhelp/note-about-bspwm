@@ -17,9 +17,11 @@ grand_parent: 設定
 
 ## 設定檔路徑
 
-* [~/.config/bspwm/sxhkdrc](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/sxhkdrc)
-* [~/.config/bspwm/bspwmrc](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/bspwmrc)
-* [~/.config/bspwm/helper/bin/bspwm-up](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/helper/bin/bspwm-up)
+| 路徑 | 簡易說明 |
+| --- | --- |
+| [~/.config/bspwm/sxhkdrc](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/sxhkdrc) | bspwmrc start |
+| [~/.config/bspwm/bspwmrc](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/bspwmrc) | keybind config |
+| [~/.config/bspwm/helper/bin/bspwm-up](https://github.com/samwhelp/note-about-bspwm/blob/gh-pages/_demo/config/bspwm-config/main/config/bspwm/helper/bin/bspwm-up) | autostart |
 
 
 ## 按鍵綁定
