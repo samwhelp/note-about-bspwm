@@ -1,9 +1,9 @@
 ---
 title: 視窗聚焦切換
-nav_order: 5025
+nav_order: 2025
 has_children: false
-parent: 使用情境(客製)
-grand_parent: 使用情境
+parent: 按鍵綁定
+grand_parent: 設定
 ---
 
 

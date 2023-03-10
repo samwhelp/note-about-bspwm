@@ -2,8 +2,10 @@
 title: 我的設定
 nav_order: 2020
 has_children: false
-parent: 設定
+parent: 設定檔
+grand_parent: 設定
 ---
+
 
 # 我的設定
 

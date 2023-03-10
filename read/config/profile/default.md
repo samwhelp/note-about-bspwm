@@ -1,9 +1,11 @@
 ---
 title: 預設設定
-nav_order: 2021
+nav_order: 2010
 has_children: false
-parent: 設定
+parent: 設定檔
+grand_parent: 設定
 ---
+
 
 # 預設設定
 

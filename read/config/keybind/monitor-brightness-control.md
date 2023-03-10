@@ -1,9 +1,9 @@
 ---
 title: 螢幕亮度控制
-nav_order: 5053
+nav_order: 2053
 has_children: false
-parent: 使用情境(客製)
-grand_parent: 使用情境
+parent: 按鍵綁定
+grand_parent: 設定
 ---
 
 
