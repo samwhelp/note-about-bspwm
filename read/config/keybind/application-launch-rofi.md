@@ -17,3 +17,12 @@ grand_parent: 設定
 | `Alt + Shift + d` | 開啟 Rofi (可用應用程式列表)   | `rofi -show drun -show-icons`   |
 | `Alt + Shift + w` | 開啟 Rofi (已經開啟的視窗列表) | `rofi -show window -show-icons` |
 | `Alt + Shift + r` | 開啟 Rofi (可用指令列表)       | `rofi -show run`                |
+
+
+
+
+## 相關筆記
+
+| Link | GitHub |
+| ---- | ------ |
+| [Rofi 探索筆記](https://samwhelp.github.io/note-about-rofi/) | [GitHub](https://github.com/samwhelp/note-about-rofi) |
